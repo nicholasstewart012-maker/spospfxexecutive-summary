@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "executive-summary-client-side-solution",
+    "id": "408cb73e-013a-428d-a0d6-a3a285e8faec",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "executive-summary description"
+      },
+      "longDescription": {
+        "default": "executive-summary description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "executive-summary Feature",
+        "description": "The feature that activates elements of the executive-summary solution.",
+        "id": "c419e5fa-bb3a-4471-afc2-dde2223bc296",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/executive-summary.sppkg"
+  }
+}

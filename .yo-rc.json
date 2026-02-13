@@ -1,0 +1,23 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "executive-summary",
+    "environment": "spo",
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "react",
+    "componentName": "ExecutiveSummary",
+    "componentDescription": "Executive Summary Web Part",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.18.0",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "executive-summary",
+    "libraryId": "408cb73e-013a-428d-a0d6-a3a285e8faec",
+    "packageManager": "npm",
+    "solutionShortDescription": "executive-summary description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  }
+}

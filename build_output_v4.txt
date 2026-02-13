@@ -1,0 +1,17 @@
+﻿
+> executive-summary@0.0.1 build
+> heft test --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:clean] Deleted 0 files and 5 folders
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Generating sass typings...
+[build:copy-javascript] Copied 2 files and linked 0 files
+[build:sass] Generated sass typings
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 8 files and linked 0 files
+[build:lint] Using ESLint version 8.57.1
+[build:webpack] Using Webpack version 5.95.0
+[build:webpack] Running Webpack compilation
+ ---- build encountered an error (12.563s) ---- 
+-------------------- Failed (12.582s) --------------------

@@ -4,6 +4,7 @@ import "@pnp/sp/webs";
 import "@pnp/sp/lists";
 import "@pnp/sp/items";
 import { IEvent, EventFields } from "../common/IEvent";
+import { Web } from "@pnp/sp/webs";
 
 export class SPService {
     private _sp: SPFI;
@@ -12,13 +13,14 @@ export class SPService {
         this._sp = spfi().using(SPFx(context));
     }
 
-    public async getEvents(listName: string): Promise<IEvent[]> {
+    public async getEvents(siteUrl: string, listName: string): Promise<IEvent[]> {
         try {
-            if (!listName) {
+            if (!listName || !siteUrl) {
                 return [];
             }
 
-            const items: any[] = await this._sp.web.lists
+            const web = Web([this._sp.web, siteUrl]);
+            const items: any[] = await web.lists
                 .getByTitle(listName)
                 .items
                 .select(...EventFields)

@@ -1,0 +1,82 @@
+﻿
+> executive-summary@0.0.1 build
+> heft test --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:clean] Deleted 0 files and 5 folders
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Generating sass typings...
+[build:copy-javascript] Copied 2 files and linked 0 files
+[build:sass] Generated sass typings
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 8 files and linked 0 files
+[build:lint] Using ESLint version 8.57.1
+[build:webpack] Using Webpack version 5.95.0
+[build:webpack] Running Webpack compilation
+ ---- build finished (13.648s) ---- 
+ ---- test started ---- 
+[test:clean] Deleted 11 files and 3 folders
+[test:jest] Using Jest version 29.5.0
+No tests found, exiting with code 0
+[test:jest] 
+[test:jest] Run start. 0 test suites
+[test:jest] 
+[test:jest] Tests finished:
+[test:jest]   Successes: 0
+[test:jest]   Failures: 0
+[test:jest]   Total: 0
+ ---- test finished (0.848s) ---- 
+-------------------- Finished (14.516s) --------------------
+ ---- package-solution started ---- 
+Found manifest: 0d1ef551-0db0-47ff-ad61-714f38420559.manifest.json
+Found client-side build resource: executive-summary-web-part_05db7881099622960c2a.js
+Found client-side build resource: executive-summary-web-part_05db7881099622960c2a.js.LICENSE.txt
+Found client-side build resource: ExecutiveSummaryWebPartStrings_en-us_3bd812ceda191f7235a1db0c41d7c3a7.js
+Found teams icons: 0d1ef551-0db0-47ff-ad61-714f38420559_color.png
+Found teams icons: 0d1ef551-0db0-47ff-ad61-714f38420559_outline.png
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { executive-summary Feature }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to C:\SPOSPFXCalendarSummary/sharepoint/solution/debug...
+Cleaned C:\SPOSPFXCalendarSummary/sharepoint/solution/debug
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\AppManifest.xml
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\_rels\AppManifest.xml.rels
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\_rels\.rels
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\[Content_Types].xml
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\feature_c419e5fa-bb3a-4471-afc2-dde2223bc296.xml
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\_rels\feature_c419e5fa-bb3a-4471-afc2-dde2223bc296.xml.rels
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\feature_c419e5fa-bb3a-4471-afc2-dde2223bc296.xml.config.xml
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\c419e5fa-bb3a-4471-afc2-dde2223bc296\WebPart_0d1ef551-0db0-47ff-ad61-714f38420559.xml
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\ClientSideAssets.xml
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\_rels\ClientSideAssets.xml.rels
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\ClientSideAssets.xml.config.xml
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\ClientSideAssets\executive-summary-web-part_05db7881099622960c2a.js
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\ClientSideAssets\executive-summary-web-part_05db7881099622960c2a.js.LICENSE.txt
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\ClientSideAssets\ExecutiveSummaryWebPartStrings_en-us_3bd812ceda191f7235a1db0c41d7c3a7.js
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\ClientSideAssets\0d1ef551-0db0-47ff-ad61-714f38420559_color.png
+Created file: C:\SPOSPFXCalendarSummary\sharepoint\solution\debug\ClientSideAssets\0d1ef551-0db0-47ff-ad61-714f38420559_outline.png
+Created file: C:\SPOSPFXCalendarSummary/sharepoint/solution/executive-summary.sppkg
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.502s) ---- 
+-------------------- Finished (0.506s) --------------------

@@ -16,8 +16,8 @@ const ExecutiveSummary: React.FC<IExecutiveSummaryProps> = (props) => {
 
   React.useEffect(() => {
     const fetchData = async () => {
-      if (!props.listName) {
-        setError("Please configure the List Name in the Web Part properties.");
+      if (!props.listName || !props.siteUrl) {
+        setError("Please configure the Site URL and List Name in the Web Part properties.");
         setLoading(false);
         return;
       }
@@ -25,7 +25,7 @@ const ExecutiveSummary: React.FC<IExecutiveSummaryProps> = (props) => {
       try {
         setLoading(true);
         const spService = new SPService(props.context);
-        const fetchedEvents = await spService.getEvents(props.listName);
+        const fetchedEvents = await spService.getEvents(props.siteUrl, props.listName);
         setEvents(fetchedEvents);
         setError("");
       } catch (err: any) {
@@ -37,7 +37,7 @@ const ExecutiveSummary: React.FC<IExecutiveSummaryProps> = (props) => {
     };
 
     void fetchData();
-  }, [props.listName, props.context]);
+  }, [props.listName, props.siteUrl, props.context]);
 
   const groupedEvents = React.useMemo(() => {
     const groups: { [key: string]: IEvent[] } = {};

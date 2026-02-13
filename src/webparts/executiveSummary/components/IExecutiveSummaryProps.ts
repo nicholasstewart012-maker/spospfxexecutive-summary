@@ -8,4 +8,5 @@ export interface IExecutiveSummaryProps {
   userDisplayName: string;
   context: WebPartContext;
   listName: string;
+  siteUrl: string;
 }
